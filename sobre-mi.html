@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Dra. [Nombre] - Psiquiatría Perinatal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#fdf2f8',
+                        'warm-pink': '#fce7f3',
+                        'sage': '#f0fdf4',
+                        'soft-blue': '#eff6ff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-soft-pink via-white to-soft-blue min-h-screen">
+    <!-- Navigation Header -->
+    <nav class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-semibold text-gray-800">
+                        <!-- PERSONALIZAR: Cambiar por el nombre real de la doctora -->
+                        Dra. [Nombre Completo]
+                    </h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            Inicio
+                        </a>
+                        <a href="sobre-mi.html" class="text-pink-600 hover:text-pink-800 px-3 py-2 rounded-md text-sm font-medium border-b-2 border-pink-600">
+                            Sobre mí
+                        </a>
+                        <a href="contacto.html" class="text-gray-700 hover:text-pink-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500" id="mobile-menu-button">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <!-- Hamburger icon -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="index.html" class="text-gray-700 hover:text-pink-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                    Inicio
+                </a>
+                <a href="sobre-mi.html" class="text-pink-600 hover:text-pink-800 block px-3 py-2 rounded-md text-base font-medium border-l-4 border-pink-600 bg-pink-50">
+                    Sobre mí
+                </a>
+                <a href="contacto.html" class="text-gray-700 hover:text-pink-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                    Contacto
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Sobre mí</h1>
+                <p class="text-xl text-gray-600 font-light">
+                    Conoce mi experiencia y enfoque en psiquiatría perinatal
+                </p>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section class="py-16 bg-white/50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Photo Placeholder -->
+                    <div class="order-2 lg:order-1">
+                        <div class="aspect-square max-w-md mx-auto bg-gradient-to-br from-pink-100 to-blue-100 rounded-2xl shadow-lg overflow-hidden">
+                            <!-- PERSONALIZAR: Reemplazar con la foto real de la doctora -->
+                            <div class="h-full flex items-center justify-center text-gray-500">
+                                <div class="text-center">
+                                    <svg class="w-20 h-20 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                    </svg>
+                                    <p class="text-sm">Foto de la Doctora</p>
+                                    <p class="text-xs text-gray-400 mt-1">Cambiar en código</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Biography Text -->
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Mi experiencia</h2>
+                        <!-- PERSONALIZAR: Reemplazar con la biografía real -->
+                        <div class="prose prose-lg text-gray-700 space-y-4">
+                            <p>
+                                Soy una psiquiatra especializada en salud mental perinatal con más de [X] años de experiencia 
+                                acompañando a mujeres durante una de las etapas más importantes de sus vidas.
+                            </p>
+                            <p>
+                                Mi formación incluye [Título universitario] de [Universidad], especialización en 
+                                [Especialización] y formación adicional en [Áreas específicas]. 
+                                He trabajado en [Instituciones/Experiencia relevante].
+                            </p>
+                            <p>
+                                Mi enfoque se basa en la comprensión integral de los cambios emocionales, hormonales y 
+                                psicológicos que ocurren durante el embarazo, el parto y el posparto. Creo firmemente 
+                                en crear un espacio seguro y libre de juicios donde cada mujer pueda expresar sus 
+                                sentimientos y preocupaciones.
+                            </p>
+                            <p class="text-pink-700 font-medium">
+                                "Mi misión es acompañarte en este camino único, brindándote las herramientas necesarias 
+                                para que puedas disfrutar plenamente de tu maternidad."
+                            </p>
+                        </div>
+
+                        <!-- Credentials -->
+                        <div class="mt-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4">Credenciales</h3>
+                            <!-- PERSONALIZAR: Agregar credenciales reales -->
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    Médico Psiquiatra - [Universidad/Institución]
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    Especialización en Psiquiatría Perinatal - [Institución]
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    Miembro de [Asociación/Colegio Profesional]
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    Registro Médico N° [Número]
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Mis servicios</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Ofrezco una gama completa de servicios especializados en salud mental perinatal, 
+                        adaptados a las necesidades únicas de cada etapa
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Depresión Posparto</h3>
+                        <p class="text-gray-600 mb-4">
+                            Tratamiento especializado para la depresión que puede presentarse después del parto, 
+                            con un enfoque integral que incluye terapia y, cuando sea necesario, medicación segura.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Evaluación diagnóstica completa</li>
+                            <li>• Tratamiento farmacológico seguro</li>
+                            <li>• Seguimiento personalizado</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Ansiedad Durante el Embarazo</h3>
+                        <p class="text-gray-600 mb-4">
+                            Manejo especializado de la ansiedad que puede surgir durante el embarazo, 
+                            con técnicas seguras que protegen tanto a la madre como al bebé.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Técnicas de relajación y mindfulness</li>
+                            <li>• Manejo de pensamientos intrusivos</li>
+                            <li>• Preparación para el parto</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Acompañamiento en el Puerperio</h3>
+                        <p class="text-gray-600 mb-4">
+                            Apoyo integral durante los primeros meses después del parto, ayudándote a 
+                            navegar los cambios emocionales y adaptativos de esta nueva etapa.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Ajuste a la nueva maternidad</li>
+                            <li>• Manejo del estrés y la fatiga</li>
+                            <li>• Fortalecimiento del vínculo madre-bebé</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Terapia de Pareja</h3>
+                        <p class="text-gray-600 mb-4">
+                            Orientación para parejas que enfrentan desafíos en su relación durante 
+                            el embarazo o después del nacimiento del bebé.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Comunicación efectiva</li>
+                            <li>• Distribución de responsabilidades</li>
+                            <li>• Fortalecimiento de la relación</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Consulta Prenatal</h3>
+                        <p class="text-gray-600 mb-4">
+                            Evaluación y prevención de problemas de salud mental durante el embarazo, 
+                            con énfasis en la preparación emocional para la llegada del bebé.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Evaluación de riesgo psicológico</li>
+                            <li>• Planificación del parto</li>
+                            <li>• Educación sobre cambios emocionales</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Grupos de Apoyo</h3>
+                        <p class="text-gray-600 mb-4">
+                            Facilitación de grupos terapéuticos para madres que comparten experiencias 
+                            similares, creando una red de apoyo y comprensión mutua.
+                        </p>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Sesiones grupales estructuradas</li>
+                            <li>• Intercambio de experiencias</li>
+                            <li>• Construcción de redes de apoyo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-6">
+                        ¿Necesitas más información sobre algún servicio específico?
+                    </p>
+                    <a href="contacto.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-pink-600 hover:bg-pink-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+                        Agenda una consulta
+                        <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm">
+                        <!-- PERSONALIZAR: Cambiar por el nombre real y año actual -->
+                        © 2024 Dra. [Nombre Completo]. Todos los derechos reservados.
+                    </p>
+                </div>
+                
+                <!-- Social Media Icons (Placeholder) -->
+                <div class="flex space-x-4">
+                    <!-- PERSONALIZAR: Cambiar los enlaces href por las URLs reales de redes sociales -->
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.672 13.386 3.672 11.628c0-1.77.53-3.286 1.454-4.182.925-.896 2.076-1.384 3.323-1.384 1.297 0 2.448.49 3.323 1.297.875.806 1.401 2.315 1.401 4.073 0 1.77-.53 3.286-1.454 4.182-.925.896-2.076 1.384-3.323 1.384z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
